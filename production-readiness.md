@@ -57,7 +57,7 @@
 | Area   | Item  | Priority  | Comments | Done? |
 |---|---|---|---|---|
 | **Load testing**  | Load tests are automated or occur on a regular cadence  | Important  | | | 
-|   | Load test results are documented and published  | Nice to have  | | | 
+|   | Load test results are documented and published  | Important  | | | 
 | **Stress testing**  | Stress tests are automated or occur on a regular cadence  | Important  | | | 
 |   | Stress test results are documented and published   |  Nice to have  | | | 
 | **Chaos engineering**  | Once the applications have proven the ability to stand up to load and stress, the team integrates chaos engineering to identify weak points and opportunities to reduce failures  | Nice to have | | | 
