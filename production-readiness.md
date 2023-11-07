@@ -14,7 +14,7 @@
 | **Continuous integration**   | When engineers commit their changes, the system kicks off automated builds, tests, and deployment to a lower-level environment  | Critical  | | | 
 |   | Pipeline failure results in a notification to the responsible team to resolve the issue prompt  | Nice to have  | | | 
 | **Continuous delivery**  | Deploying to production involves nothing more than approval and a button click  | Nice to have  | | | 
-|   |   |   |   | | | | Changelogs and release notes indicate what changes exist in each environment  | Critical  | | | 
+|   | Changelogs and release notes indicate what changes exist in each environment  | Critical  | | | 
 |  **Static code analysis** | Code is automatically scanned, formatted, or linted according to coding standards  | Important  | | | 
 | **On-call policy**  | The service has an on-call system that pages the owning team for incidents (ideally, this involves tools like PagerDuty or Squadcast)  | Critical  | | | 
 | **Incident management**  | The incident management and escalation processes have been documented (this includes processes for postmortem and long-term remediation)  | Critical  | | | 
