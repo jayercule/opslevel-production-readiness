@@ -25,8 +25,8 @@
 | **Deployment strategy**  | The automated deployment strategy has been documented (for example, blue-green, canary, or others to create safer zero-downtime deployments)  |  Nice to have | | | 
 | **Continuous integration**   | When engineers commit their changes, the system kicks off automated builds, tests, and deployment to a lower-level environment  | Important  | | | 
 |   | Pipeline failure results in a notification to the responsible team to resolve the issue prompt  | Nice to have  | | | 
-| **Continuous delivery**  | Deploying to production involves nothing more than approval and a button click  | Nice to have  | | | 
-|   | Changelogs and release notes indicate what changes exist in each environment  | Critical  | | | 
+| **Continuous delivery**  | Changelogs and release notes indicate what changes exist in each environment | Nice to have  | | | 
+|   | Deploying to production involves nothing more than approval and a button click | Critical  | | | 
 |  **Static code analysis** | Code is automatically scanned, formatted, or linted according to coding standards  | Important  | | | 
 
 ## Operations
