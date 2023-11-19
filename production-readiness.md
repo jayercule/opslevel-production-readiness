@@ -1,10 +1,10 @@
-## General
+## Service onboarding
 
 | Area   | Item  | Priority  | Comments | Done? |
 |---|---|---|---|---|
 | **Ownership** |  Service owners are identified | Critical | | :heavy_check_mark: | 
 |   | Contact information and methods are provided   | Critical | | :heavy_check_mark: | 
-| **Onboarding** | Integration instructions for APIs are documented  | Important  | |  | 
+| **API documentation** | Integration instructions for APIs are documented  | Important  | |  | 
 | **SLI/SLO/SLA**  | The SLIs and SLOs are documented and accessible  | Critical  | |  | 
 |   | If applicable, you’ve also documented the SLAs  | Important | |  | 
 
@@ -24,8 +24,10 @@
 |---|---|---|---|---|
 | **Deployment strategy**  | The automated deployment strategy has been documented (for example, blue-green, canary, or others to create safer zero-downtime deployments)  |  Nice to have | | | 
 | **Continuous integration**   | When engineers commit their changes, the system kicks off automated builds, tests, and deployment to a lower-level environment  | Important  | | | 
+|   | Production deployment requires pull request approval by at least one other team member who isn’t the requestor | Critical  | | | 
 |   | Pipeline failure results in a notification to the responsible team to resolve the issue prompt  | Nice to have  | | | 
 | **Continuous delivery**  | Changelogs and release notes indicate what changes exist in each environment | Critical  | | | 
+|   | Promotions to production are performed by someone other than the person who checked in a change | Critical  | | | 
 |   | Deploying to production involves nothing more than approval and a button click | Nice to have  | | | 
 |  **Static code analysis** | Code is automatically scanned, formatted, or linted according to coding standards  | Important  | | | 
 
@@ -39,7 +41,10 @@
 |   | Team updates runbooks whenever they uncover a new scenario  | Critical  | | | 
 | **Logging**  | The service utilizes centralized logging  |  Critical | | | 
 |   | Logs can be accessed easily  | Important  | | | 
-|  **Metrics** | At a minimum, the service supports the Four Golden Signals - latency, errors, traffic, and saturation   |  Critical | | | 
+|  **Metrics** | Four Golden Signals support: Latency   |  Critical | | | 
+|   | Four Golden Signals support: Errors  | Critical  | | |
+|   | Four Golden Signals support: Traffic  | Critical  | | |
+|   | Four Golden Signals support: Saturation  | Critical  | | |
 | **Tracing**   | The application transactions can be traced, using the appropriate tools and sampling configuration for the service  | Important  | | | 
 
 ## Testing
@@ -51,6 +56,7 @@
 | **End-to-end acceptance tests**  | Automated end-to-end or acceptance tests run as part of the Continuous Integration/Continuous Deployment (CI/CD pipeline)  | Nice to have  | | | 
 |   | If manual testing is required, test results are documented  | Critical | | | 
 | **Broken tests**  | Failing tests break the build  | Critical  | | | 
+|  | Flaky tests (tests that fail intermittently) are identified and fixed  | Critical  | | | 
 
 ## Resiliency 
 
